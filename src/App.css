@@ -38,7 +38,32 @@ nav a:hover {
   color: #ff3f6c; /* Accent color on hover */
   text-decoration: underline;
 }
+.product-Categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.category-item {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0 15px;
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
 
+.category-item:hover {
+  color: #ff3f6c; /* Accent color on hover */
+  text-decoration: underline;
+}
+
+.selected-category {
+  color: #ff3f6c; /* Pink color for selected category */
+  text-decoration: underline;
+}
 /* Footer styling */
 footer {
   background-color: #ffffff; /* White footer */
@@ -238,7 +263,7 @@ footer {
 
 @media (max-width: 576px) {
   .product-card {
-    width: 100%;
+    width: 42%;
   }
 
   nav a {
