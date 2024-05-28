@@ -30,7 +30,7 @@ const ProductDetail = () => {
     <div className="product-detail">
       {product.image && <img src={product.image} alt={product.title} />}
       <h2>{product.title}</h2>
-      <p>Rs. {product.price}</p>
+      <p>$ {product.price}</p>
       {itemInCart ? (
         <p>Item is already in cart</p>
       ) : (

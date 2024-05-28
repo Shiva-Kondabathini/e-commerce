@@ -12,7 +12,7 @@ const Cart = () => {
         <div key={item.id} className="cart-item">
           <img src={item.image} alt={item.title} />
           <h2>{item.title}</h2>
-          <p>Rs. {item.price}</p>
+          <p>$ {item.price}</p>
           <button style={{ backgroundColor: "#124e66", marginRight: "20px" }}>
             Buy Now
           </button>
