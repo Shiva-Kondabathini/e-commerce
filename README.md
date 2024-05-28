@@ -1,3 +1,3 @@
 # E-Commerce
 
-##shiva Kondabathini update read me
+##shiva Kondabathini update product caategories
