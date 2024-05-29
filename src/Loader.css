@@ -8,7 +8,7 @@
 
 .loader {
   border: 8px solid rgba(239, 236, 236, 0.1); /* Light grey with transparency */
-  border-top: 8px solid #49d13d; /* pink */
+  border-top: 8px solid #ff3f6c; /* pink */
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -17,7 +17,7 @@
 
 .loader-container p {
   font-size: 1.2rem;
-  color: #49d13d; /* Matching the spinner color */
+  color: #ff3f6c; /* Matching the spinner color */
 }
 
 @keyframes spin {

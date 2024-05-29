@@ -8,19 +8,30 @@ const Cart = () => {
 
   return (
     <div className="cart">
-      {cart.map((item) => (
-        <div key={item.id} className="cart-item">
-          <img src={item.image} alt={item.title} />
-          <h2>{item.title}</h2>
-          <p>$ {item.price}</p>
-          <button style={{ backgroundColor: "#124e66", marginRight: "20px" }}>
-            Buy Now
-          </button>
-          <button onClick={() => dispatch(removeFromCart(item.id))}>
-            Remove
-          </button>
+      {!cart ? (
+        <div className="empty-cart">
+          <img src="https://i.pinimg.com/originals/2e/ac/fa/2eacfa305d7715bdcd86bb4956209038.png"></img>
         </div>
-      ))}
+      ) : (
+        <>
+          {cart.map((item) => (
+            <div key={item.id} className="cart-item">
+              <img src={item.image} alt={item.title} />
+              <h2>{item.title}</h2>
+              <p>$ {item.price}</p>
+              <button
+                style={{ backgroundColor: "#124e66", marginRight: "20px" }}
+              >
+                Buy Now
+              </button>
+              <br></br>
+              <button onClick={() => dispatch(removeFromCart(item.id))}>
+                Remove
+              </button>
+            </div>
+          ))}
+        </>
+      )}
     </div>
   );
 };
