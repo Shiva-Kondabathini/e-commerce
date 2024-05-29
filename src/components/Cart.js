@@ -8,7 +8,7 @@ const Cart = () => {
 
   return (
     <div className="cart">
-      {!cart ? (
+      {cart.length === 0 ? (
         <div className="empty-cart">
           <img src="https://i.pinimg.com/originals/2e/ac/fa/2eacfa305d7715bdcd86bb4956209038.png"></img>
         </div>
